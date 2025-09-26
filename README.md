@@ -53,14 +53,14 @@ The repository includes a quick test that verifies the environment setup and bas
 ```bash
 python test/test_train_model.py
 ```
-
+---
 ## 📂 Data
 
 For the quick test we **generate synthetic CSVs** with the following columns (matching the paper):
 `GR, ILD_log10, DeltaPHI, PHIND, PE, NM_M, RELPOS, Facies, Depth`.
 
 To run on your real data, prepare two CSV files with the same columns and call:
-
+---
 ### Basic Training
 ```bash
 python train_model.py \
