@@ -61,7 +61,6 @@ For the quick test we **generate synthetic CSVs** with the following columns (ma
 
 To run on your real data, prepare two CSV files with the same columns and call:
 
-```bash
 ### Basic Training
 ```bash
 python train_model.py \
