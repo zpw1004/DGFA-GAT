@@ -55,12 +55,7 @@ pip install -r requirements.txt
 The repository includes a **quick test** that runs end‑to‑end on a tiny synthetic dataset and finishes in under a minute on CPU.
 
 ```bash
-# option A: one-liner quick test
-python quick_test.py
-
-# option B: generate toy CSVs + run the training entry point
-python quick_test.py --only-generate
-python -m dgfa_gat.train --src data/sample/source_domain.csv --tgt data/sample/target_domain.csv --epochs 3 --out out_quick
+python train_model.py --src ./dataset/WA.csv --tgt ./dataset/WB1.csv --epochs 80 --out ./runs/exp1
 ```
 
 This quick test is minimal and intended to verify environment/setup and the CLI interface only. It is **not** meant to reproduce the paper‑level metrics.
