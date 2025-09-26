@@ -57,14 +57,12 @@ python test/test_train_model.py
 ## 📂 Data
 This study is based on two important oil and gas field datasets for cross-well validation experiments:
 
-### Hugoton–Panoma Oil and Gas Field Dataset
+#### Hugoton–Panoma Oil and Gas Field Dataset
 The current codebase provides the complete subset of this dataset (WA-WB well data), which serves as the primary experimental validation benchmark. The data has been preprocessed and is included in the codebase.
 
-### Tarim Oil and Gas Field Dataset
+#### Tarim Oil and Gas Field Dataset
 As the related research project is still ongoing, the data has not been made public yet. It will be released after the project is completed, and will be used to verify the model's generalization capability under complex geological conditions.
 
-### Experimental Design
-The study employs a strict cross-well validation scheme, using well data from different oil and gas fields and geological conditions to test the model's domain adaptation performance, ensuring the reliability of the algorithm in practical applications.
 ---
 ### Basic Training
 ```bash
