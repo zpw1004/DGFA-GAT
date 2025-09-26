@@ -52,14 +52,10 @@ pip install -r requirements.txt
 
 ## 🚀 Quick test (required by the journal)
 
-The repository includes a **quick test** that runs end‑to‑end on a tiny synthetic dataset and finishes in under a minute on CPU.
+The repository includes a quick test that verifies the environment setup and basic functionality using synthetic data:
 
 ```bash
-python train_model.py --src ./dataset/WA.csv --tgt ./dataset/WB1.csv --epochs 80 --out ./runs/exp1
-```
-
-This quick test is minimal and intended to verify environment/setup and the CLI interface only. It is **not** meant to reproduce the paper‑level metrics.
-
+python test/test_train_model.py
 ---
 
 ## 📂 Data
@@ -70,7 +66,13 @@ For the quick test we **generate synthetic CSVs** with the following columns (ma
 To run on your real data, prepare two CSV files with the same columns and call:
 
 ```bash
-python -m dgfa_gat.train --src /path/to/source.csv --tgt /path/to/target.csv --epochs 80 --out runs/exp1
+### Basic Training
+```bash
+python train_model.py \
+    --source-path ./dataset/WA.csv \
+    --target-path ./dataset/WB1.csv \
+    --epochs 80 \
+    --output-dir ./runs/exp1
 ```
 
 > **Reproducibility:** results depend on random seeds and GPU nondeterminism. We set seeds and enable deterministic flags where possible. See code comments for details.
@@ -94,22 +96,13 @@ MIT (see `LICENSE`).
 
 ---
 
-## 🔖 How to cite
-
-- This repository ships a `CITATION.cff` file so GitHub renders a *Cite this repository* button.
-- We recommend archiving a tagged release on **Zenodo** to obtain a DOI and adding a DOI badge to the README.
-
----
-
 ## ✍️ Computer Code Availability (template for the manuscript)
 
 **Computer Code Availability** — The code developed/used in this study is publicly available at:  
-**GitHub:** https://github.com/your-org/dgfa-gat (public, anonymous download)  
-**Version archived with DOI:** <add Zenodo DOI here>  
+**GitHub:** https://github.com/zpw1004/DGFA-GAT 
+
 **License:** MIT.  
 **Quick‑test:** repository includes `quick_test.py` and instructions in the README.
-
-（中文）**计算机代码可用性声明**：本文使用/开发的代码已在 **GitHub** 公共仓库公开（可匿名下载），并通过 **Zenodo** 存档分配 DOI。仓库包含 README 使用说明、`quick_test.py` 快速测试与 MIT 许可。链接：<填入GitHub与DOI>。
 
 ---
 
@@ -117,30 +110,25 @@ MIT (see `LICENSE`).
 
 ```
 DGFA-GAT/
-├─ CITATION.cff
-├─ LICENSE
-├─ README.md
-├─ requirements.txt
-├─ .gitignore
-├─ quick_test.py
-├─ src/
-│  └─ dgfa_gat/
-│     ├─ __init__.py
-│     ├─ train.py
-│     ├─ model.py
-│     └─ data_utils.py
-├─ data/
-│  └─ sample/  # tiny synthetic CSVs for the quick test
-└─ tests/
-   └─ test_quick.py
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── CITATION.cff
+├── LICENSE
+├── dataset/                  # Geological facies datasets
+│   ├── WA.csv               # Source domain data (Well A)
+│   └── WB.csv               # Target domain data (Well B)
+├── test/                    # Test scripts
+│   └── test_train_model.py  # Quick functionality test
+├── pic/                     # Experimental results and figures
+├── args.py                  # Command-line argument parser
+├── config.py                # Configuration management
+├── train_model.py           # Main training script
+├── graph_based_da_gat.py    # DGFA-GAT model implementation
+├── build_sample_graph.py    # Sample graph construction
+├── build_cluster_graph.py   # Cluster graph construction
+├── utils.py                 # Utility functions
+└── __pycache__/             # Python bytecode cache (ignored)
 ```
 
 ---
-
-## 📝 Notes for editors/reviewers
-
-- Public repo ✓
-- README with instructions ✓
-- At least one quick test & how to run ✓
-- Open‑source license ✓
-- No single compressed file; source is browsable and version‑controlled ✓
