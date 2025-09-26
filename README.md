@@ -61,7 +61,7 @@ This study selects two representative oil and gas field datasets for cross-well 
 The current codebase provides the complete subset of this dataset (WA-WB well data), which serves as the primary experimental validation benchmark. The data has been preprocessed and is included in the codebase.
 
 #### Tarim Oil and Gas Field Dataset
-As the related research project is still ongoing, the data has not been made public yet. It will be released after the project is completed. and will be used to verify the model's generalization capability under complex geological conditions.
+As the related research project is still ongoing, the data has not been made public yet. It will be released after the project is completed. 
 
 ---
 ### Basic Training
