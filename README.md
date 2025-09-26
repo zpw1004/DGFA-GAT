@@ -74,17 +74,6 @@ python train_model.py \
 
 ---
 
-## 🧪 Unit/Smoke tests
-
-We include a minimal smoke test in `tests/test_quick.py` that imports the package and exercises one training step on the toy data.
-
-Run:
-```bash
-pytest -q
-```
-
----
-
 ## 📜 License
 
 MIT (see `LICENSE`).
