@@ -1,9 +1,6 @@
-# DGFA-GAT (Reproducible Research Release)
-
-This repository contains the reference implementation for our manuscript (working title):
-
-> _Domain-Generalized Fusion-Attention GAT for Well-Log Facies Classification_
-- **Visualization of Lithofacies Prediction Results for Blind Wells Using Different Methods**
+# DGFA-GAT
+> A Geology-Aware Dual-Graph Attention Network for Cross-Well Lithofacies Interpretation with Limited Labels
+- **Comparative Visualization of Lithology Predictions Across Multiple Wells**
 <div align="center">
 
   <!-- 第一行：3 张 -->
@@ -29,7 +26,15 @@ This repository contains the reference implementation for our manuscript (workin
 </div>
 
 ---
-
+Tested with:
+- matplotlib==3.7.5
+- numpy==1.24.4
+- pandas==2.0.3
+- scikit-learn==1.3.2
+- torch==2.0.0
+- torchvision==0.15.0
+- torchaudio==2.0.0
+- torch-geometric==2.6.1
 ## 🔧 Installation
 
 ```bash
