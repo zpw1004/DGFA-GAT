@@ -39,7 +39,7 @@ Tested with:
 
 ```bash
 # (1) create and activate a virtual env (example with conda; any env manager is fine)
-conda create -n dgfa-gat python=3.10 -y
+conda create -n dgfa-gat python=3.9 -y
 conda activate dgfa-gat
 
 # (2) install dependencies
