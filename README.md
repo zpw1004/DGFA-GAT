@@ -3,8 +3,20 @@
 This repository contains the reference implementation for our manuscript (working title):
 
 > _Domain-Generalized Fusion-Attention GAT for Well-Log Facies Classification_
+- **Visualization of Lithofacies Prediction Results for Blind Wells Using Different Methods**
+<div align="center">
+  <img src="pic/SHRIMPLIN.jpg" width="300" />
+  <img src="pic/LUKE G U.jpg" width="300" />
+  <img src="pic/CROSS H CATTLE.jpg" width="300" />
+  <img src="pic/wb_wa_NOLAN.jpg" width="300" />
+  <img src="pic/wb_wa_Recruit F9.jpg" width="300" />
+  <img src="pic/wb_wa_NEWBY.jpg" width="300" />
+  <img src="pic/wb_wa_CHURCHMAN BIBLE.jpg" width="300" />
+  <img src="pic/wc_wd_Well1.jpg" width="300" />
+  <img src="pic/wd_wc_Well2.jpg" width="300" />
+  <img src="pic/wd_wc_Well3.jpg" width="300" />
+</div>
 
-It is prepared to comply with **Computers & Geosciences** pre‑review requirements for the *Computer Code Availability* section: public repository, README with run instructions, at least one quick test, and an open-source license.
 
 ---
 
